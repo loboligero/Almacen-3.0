@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseHighDpiScaling>true</UseHighDpiScaling>
+    <StartupObject>Almacen.CSharp.Program</StartupObject>
+    <AssemblyName>Almacen</AssemblyName>
+    <RootNamespace>Almacen.CSharp</RootNamespace>
+    <Version>3.0.0</Version>
+    <Authors>loboligero</Authors>
+    <Description>Sistema de impresión de etiquetas de almacén</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="itext7" Version="7.2.5" />
+    <PackageReference Include="itext7.bouncy-castle-adapter" Version="7.2.5" />
+  </ItemGroup>
+
+</Project>
