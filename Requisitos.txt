@@ -1,0 +1,6 @@
+Necesidades del sistema
+-----------------------
+
+FastReport 6 instalado en Embarcadero
+
+Microsoft ODBC Driver 17 for SQL Server
