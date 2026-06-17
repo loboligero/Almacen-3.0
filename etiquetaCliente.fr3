@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.4.11" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.PageNumbers="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43949,9250946875" ReportOptions.Description.Text="" ReportOptions.LastChange="44327,3237457176" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;  IF &#60;frxDBDataset1.&#34;TIPOPORTES&#34;&#62; = 'D' then&#13;&#10;    Memo2.Memo.Text := 'PORTES: DEBIDOS'&#13;&#10;  else&#13;&#10;    Memo2.Memo.Text := 'PORTES: PAGADOS'&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDataset1" DataSetName="frxDBDataset1"/>
+  </Datasets>
+  <Styles>
+    <item Name="Title" Font.Charset="1" Font.Color="16777215" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="8421504"/>
+    <item Name="Header" Font.Charset="1" Font.Color="128" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0"/>
+    <item Name="Group header" Font.Charset="1" Font.Color="128" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="16053492"/>
+    <item Name="Data" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0"/>
+    <item Name="Group footer" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0"/>
+    <item Name="Header line" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" Frame.Width="2"/>
+  </Styles>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="102" PaperHeight="76" PaperSize="256" LeftMargin="0" RightMargin="5" TopMargin="0" BottomMargin="0" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxMemoView Name="Memo31" AllowVectorExport="True" Left="5,33659191" Top="169,45877086" Width="363,99372081" Height="22,67718" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxDBDataset1.&#34;PROVINCIA&#34;] ([frxDBDataset1.&#34;PAIS&#34;])"/>
+    <TfrxMemoView Name="Memo27" AllowVectorExport="True" Left="5,33659191" Top="98,080772" Width="364,86969467" Height="19,52757167" DataField="NOMBRECOMERCIAL" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxDBDataset1.&#34;NOMBRECOMERCIAL&#34;]"/>
+    <TfrxMemoView Name="Memo37" AllowVectorExport="True" Left="5,33659191" Top="133,76977143" Width="366,61431236" Height="18,89765" DataField="DIRECCION2" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxDBDataset1.&#34;DIRECCION2&#34;]"/>
+    <TfrxMemoView Name="Memo42" AllowVectorExport="True" Left="5,33659191" Top="186,25012029" Width="362,83477016" Height="18,89765" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" HAlign="haBlock" ParentFont="False" Text="CONTACTO: [frxDBDataset1.&#34;PERSONACONTACTO&#34;]">
+      <Formats>
+        <item/>
+        <item/>
+        <item/>
+      </Formats>
+    </TfrxMemoView>
+    <TfrxMemoView Name="Memo45" Align="baRight" AllowVectorExport="True" Left="279,68522" Top="268,97655167" Width="86,92919" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="n/m">
+      <Formats>
+        <item/>
+        <item/>
+        <item/>
+      </Formats>
+    </TfrxMemoView>
+    <TfrxMemoView Name="Memo29" AllowVectorExport="True" Left="5,33659191" Top="151,61427115" Width="364,78232208" Height="18,89765" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxDBDataset1.&#34;CODPOSTAL&#34;] - [frxDBDataset1.&#34;POBLACION&#34;]"/>
+    <TfrxMemoView Name="Memo28" AllowVectorExport="True" Left="5,33659191" Top="115,92527172" Width="364,90734706" Height="18,89765" DataField="DIRECCION" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxDBDataset1.&#34;DIRECCION&#34;]"/>
+    <TfrxMemoView Name="Memo33" AllowVectorExport="True" Left="337,93523191" Top="86,92919" Width="22,67708236" Height="18,89765" Visible="False" DataField="TIPOPORTES" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxDBDataset1.&#34;TIPOPORTES&#34;]"/>
+    <TfrxMemoView Name="Memo35" AllowVectorExport="True" Left="5,33659191" Top="243,99622057" Width="238,11029236" Height="18,89765" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Agencia: [frxDBDataset1.&#34;EMPRESAENVIO&#34;] "/>
+    <TfrxMemoView Name="Memo23" AllowVectorExport="True" Left="5,78245469" Top="268,97655167" Width="209,65075531" Height="15,74804167" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="EXP: [frxDBDataset1.&#34;SERIE&#34;] - [frxDBDataset1.&#34;NUMERO&#34;]">
+      <Formats>
+        <item/>
+        <item/>
+      </Formats>
+    </TfrxMemoView>
+    <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="241,88992" Top="243,02362205" Width="128,50402" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial Narrow" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="TipoPortes"/>
+    <TfrxLineView Name="Line1" Align="baCenter" AllowVectorExport="True" Left="-2,8421709430404E-14" Top="94,48825" Width="366,61441" Height="0" Color="0" Frame.Typ="4" Frame.Width="1,5"/>
+    <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="3,77953" Top="222,99227" Width="364,78232208" Height="18,89765" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxDBDataset1.&#34;OBSERVACIONES&#34;]"/>
+    <TfrxMemoView Name="Memo5" AllowVectorExport="True" Left="3,77953" Top="204,09462" Width="362,83477016" Height="18,89765" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" HAlign="haBlock" ParentFont="False" Text="Telf. [frxDBDataset1.&#34;TELEFONO&#34;]">
+      <Formats>
+        <item/>
+        <item/>
+      </Formats>
+    </TfrxMemoView>
+    <TfrxPictureView Name="Picture1" AllowVectorExport="True" Left="7,55906" Top="0" Width="355,27582" Height="90,70872" DataField="FOTOCLIENTE" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="0" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+  </TfrxReportPage>
+</TfrxReport>
